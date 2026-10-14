@@ -11,92 +11,75 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 30px;
+      margin: 20px;
       color: #222222;
-      background-color: #ffffff;
+      background-color: white;
+      text-align: left;
     }
 
     .banner {
-      display: block;
-      width: 100%;
-      max-width: 900px;
+      width: 900px;
+      max-width: 100%;
       height: auto;
-      margin: 0 auto 20px;
-    }
-
-    h1, h2 {
-      text-align: center;
+      display: block;
     }
 
     h1 {
       font-size: 28px;
+      text-align: left;
+    }
+
+    h2 {
+      text-align: left;
     }
 
     .paper-title {
       font-family: Calibri, sans-serif;
       font-size: 22px;
-      margin-top: 25px;
     }
 
     hr {
       border: none;
       border-top: 1px solid #cccccc;
-      margin: 20px 0;
+      margin: 15px 0;
     }
 
-    /* Table of contents styling */
+    /* Table of contents */
     .toc {
-      width: 90%;
-      max-width: 500px;
-      margin: 25px auto;
-      font-family: Arial, sans-serif;
+      width: 30%;
       border-collapse: collapse;
-      border: 1px solid #d1d5db;
+      margin: 20px 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .toc th,
+    .toc td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
     }
 
     .toc th {
       background-color: #1e3a5f;
       color: white;
-      text-align: left;
-      padding: 16px;
-      font-size: 20px;
-    }
-
-    .toc td {
-      border-bottom: 1px solid #dddddd;
-      padding: 12px 16px;
-      text-align: left;
     }
 
     .toc tr:nth-child(even) {
-      background-color: #f2f5f9;
-    }
-
-    .toc tr:hover {
-      background-color: #e0eaff;
+      background-color: #dddddd;
     }
 
     .toc a {
-      color: #1d4ed8;
+      color: #0645ad;
       text-decoration: none;
-      display: block;
     }
 
     .toc a:hover {
-      color: #1e3a5f;
       text-decoration: underline;
     }
 
-    /* Main paper content */
-    .content {
-      max-width: 900px;
-      margin: 40px auto;
-      line-height: 1.7;
-    }
-
     @media (max-width: 600px) {
-      body {
-        margin: 15px;
+      .toc {
+        width: 100%;
       }
 
       h1 {
@@ -112,11 +95,9 @@
 
 <body>
 
-  <img
-    src="WebBanner2026.png"
-    alt="Conference paper banner"
-    class="banner"
-  >
+  <img src="WebBanner2026.png"
+       alt="Banner"
+       class="banner">
 
   <h1><b>ENG0018 Computer Laboratory 2026/27</b></h1>
 
@@ -130,7 +111,7 @@
 
   <hr>
 
-  <!-- Table of Contents -->
+  <!-- Table of contents -->
   <table class="toc">
     <tr>
       <th colspan="2">Table of Contents</th>
@@ -156,31 +137,6 @@
       <td><a href="#References">References</a></td>
     </tr>
   </table>
-
-  <!-- Conference paper sections -->
-  <div class="content">
-
-    <h2 id="Abstract">Abstract</h2>
-    <p>
-      Write your abstract here.
-    </p>
-
-    <h2 id="Introduction">Introduction</h2>
-    <p>
-      Write your introduction here.
-    </p>
-
-    <h2 id="Analysis">Analysis and Discussion</h2>
-    <p>
-      Write your analysis and discussion here.
-    </p>
-
-    <h2 id="References">References</h2>
-    <p>
-      Add your references here.
-    </p>
-
-  </div>
 
 </body>
 </html>
