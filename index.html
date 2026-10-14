@@ -1,72 +1,187 @@
+
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-  
 <head>
-  </head>
-  <img src ="WebBanner2026.png" alt"Banner" width="900" height="300">
-<h1><b>ENG0018 Computer Laboratory 2026/27</b><h1>
-  <h2>Student URN: 7006416</h2
-<hr>
-<h2 style=”font-family:calibri:”><b>Conference paper: The Role of Chemical Engineering in the Mass Production of Pharmaceuticals</b></h2>
-<hr>
-<!style for tables>
-  <style>
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse; 
-    width: 30%;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>ENG0018 Computer Laboratory 2026/27</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      color: #222222;
+      background-color: #ffffff;
     }
 
-    td. th {
-      border: 1px solid #dddddd;
+    .banner {
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      margin: 0 auto 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .paper-title {
+      font-family: Calibri, sans-serif;
+      font-size: 22px;
+      margin-top: 25px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #cccccc;
+      margin: 20px 0;
+    }
+
+    /* Table of contents styling */
+    .toc {
+      width: 90%;
+      max-width: 500px;
+      margin: 25px auto;
+      font-family: Arial, sans-serif;
+      border-collapse: collapse;
+      border: 1px solid #d1d5db;
+    }
+
+    .toc th {
+      background-color: #1e3a5f;
+      color: white;
       text-align: left;
-      padding: 8px;
-      ]
-
-    tr:nth-child(even) {
-      background-color:  #dddddd;
+      padding: 16px;
+      font-size: 20px;
     }
 
-
-
-
-      </style>
-
-  <style>
-    p.exl {
-    margin-left: 250px;
+    .toc td {
+      border-bottom: 1px solid #dddddd;
+      padding: 12px 16px;
+      text-align: left;
     }
-    </style>
+
+    .toc tr:nth-child(even) {
+      background-color: #f2f5f9;
+    }
+
+    .toc tr:hover {
+      background-color: #e0eaff;
+    }
+
+    .toc a {
+      color: #1d4ed8;
+      text-decoration: none;
+      display: block;
+    }
+
+    .toc a:hover {
+      color: #1e3a5f;
+      text-decoration: underline;
+    }
+
+    /* Main paper content */
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 15px;
+      }
+
+      h1 {
+        font-size: 23px;
+      }
+
+      .paper-title {
+        font-size: 19px;
+      }
+    }
+  </style>
 </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  </style>
-  .myslides {display:none;}
-</style>
+<body>
 
+  <img
+    src="WebBanner2026.png"
+    alt="Conference paper banner"
+    class="banner"
+  >
 
+  <h1><b>ENG0018 Computer Laboratory 2026/27</b></h1>
 
+  <h2>Student URN: 7006416</h2>
 
-  <!table of contents>
-  <table>
+  <hr>
 
+  <h2 class="paper-title">
+    <b>Conference paper: The Role of Chemical Engineering in the Mass Production of Pharmaceuticals</b>
+  </h2>
+
+  <hr>
+
+  <!-- Table of Contents -->
+  <table class="toc">
     <tr>
-      <th><h3>Table of contents</h3></th>
+      <th colspan="2">Table of Contents</th>
     </tr>
+
     <tr>
-      <td><a href="#Abstract">Abstract</td>
-    </tr>
-    <tr>
-      <td><a href="#Introduction">Introduction</td>
-    </tr>
-    <tr>
-      <td><a href="#Analysis and discussion">Analysis and discussion</td>
+      <td>01</td>
+      <td><a href="#Abstract">Abstract</a></td>
     </tr>
 
     <tr>
-      <td><a href="#References">References</td>
+      <td>02</td>
+      <td><a href="#Introduction">Introduction</a></td>
+    </tr>
+
+    <tr>
+      <td>03</td>
+      <td><a href="#Analysis">Analysis and Discussion</a></td>
+    </tr>
+
+    <tr>
+      <td>04</td>
+      <td><a href="#References">References</a></td>
     </tr>
   </table>
+
+  <!-- Conference paper sections -->
+  <div class="content">
+
+    <h2 id="Abstract">Abstract</h2>
+    <p>
+      Write your abstract here.
+    </p>
+
+    <h2 id="Introduction">Introduction</h2>
+    <p>
+      Write your introduction here.
+    </p>
+
+    <h2 id="Analysis">Analysis and Discussion</h2>
+    <p>
+      Write your analysis and discussion here.
+    </p>
+
+    <h2 id="References">References</h2>
+    <p>
+      Add your references here.
+    </p>
+
+  </div>
+
+</body>
+</html>
+
