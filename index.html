@@ -137,3 +137,46 @@
       <td><a href="#References">References</a></td>
     </tr>
   </table>
+
+  
+<hr>
+
+<h2>JavaScript Practice Tasks</h2>
+
+<!-- Consolidation Task 1: User input and alert -->
+<h3>Task 1: Display Your Message</h3>
+
+<label for="userMessage">Enter some text:</label>
+<input type="text" id="userMessage" placeholder="Type your message here">
+
+<button id="messageButton">Display Message</button>
+
+<!-- Consolidation Task 2: Generate a random number -->
+<h3>Task 2: Random Number Generator</h3>
+
+<p id="randomNumber">Your random number will appear here.</p>
+
+<button id="numberButton">Generate Random Number</button>
+
+<script>
+  // Task 1: Get the input and button elements
+  var messageInput = document.getElementById("userMessage");
+  var messageButton = document.getElementById("messageButton");
+
+  // Display the entered text in an alert box when clicked
+  messageButton.addEventListener("click", function() {
+    alert(messageInput.value);
+  });
+
+  // Task 2: Get the paragraph and random number button
+  var numberParagraph = document.getElementById("randomNumber");
+  var numberButton = document.getElementById("numberButton");
+
+  // Generate and display a random integer between 1 and 10
+  numberButton.addEventListener("click", function() {
+    var randomNumber = Math.floor(Math.random() * 10) + 1;
+    numberParagraph.textContent = "Your random number is: " + randomNumber;
+  });
+</script>
+</body>
+</html>
