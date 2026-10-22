@@ -1,182 +1,50 @@
-
 <!DOCTYPE html>
-<html lang="en">
 
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<img src="WebBanner2026.png" alt="Banner" width="1200" height="300">
+<h1><b>ENG0018 Computer Laboratory 2026/27</b></h1>
+<h2>Student URN: 7006416</h2>
+<hr>
+<h2 style="font-family: calibri;"><b>Conference paper: The role of Chemical Engineering in the mass production of pharmaceuticals</b></h2> 
+  <hr>
 
-  <title>ENG0018 Computer Laboratory 2026/27</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      color: #222222;
-      background-color: white;
-      text-align: left;
-    }
-
-    .banner {
-      width: 900px;
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    h1 {
-      font-size: 28px;
-      text-align: left;
-    }
-
-    h2 {
-      text-align: left;
-    }
-
-    .paper-title {
-      font-family: Calibri, sans-serif;
-      font-size: 22px;
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid #cccccc;
-      margin: 15px 0;
-    }
-
-    /* Table of contents */
-    .toc {
-      width: 30%;
+  <style for tables>
+    <style>
+    table {
+      font-family: arial, sans-serif;
       border-collapse: collapse;
-      margin: 20px 0;
-      font-family: Arial, sans-serif;
+      width: 30%;
+
     }
 
-    .toc th,
-    .toc td {
+    td, th{
       border: 1px solid #dddddd;
       text-align: left;
       padding: 8px;
     }
 
-    .toc th {
-      background-color: #1e3a5f;
-      color: white;
-    }
-
-    .toc tr:nth-child(even) {
+    tr:nth-child(even) {
       background-color: #dddddd;
     }
 
-    .toc a {
-      color: #0645ad;
-      text-decoration: none;
-    }
 
-    .toc a:hover {
-      text-decoration: underline;
-    }
 
-    @media (max-width: 600px) {
-      .toc {
-        width: 100%;
-      }
 
-      h1 {
-        font-size: 23px;
-      }
+    </style>
 
-      .paper-title {
-        font-size: 19px;
-      }
-    }
+<style>
+  p.ex1 {
+    margin-left: 250px;
+  }
   </style>
 </head>
 
-<body>
-
-  <img src="WebBanner2026.png"
-       alt="Banner"
-       class="banner">
-
-  <h1><b>ENG0018 Computer Laboratory 2026/27</b></h1>
-
-  <h2>Student URN: 7006416</h2>
-
-  <hr>
-
-  <h2 class="paper-title">
-    <b>Conference paper: The Role of Chemical Engineering in the Mass Production of Pharmaceuticals</b>
-  </h2>
-
-  <hr>
-
-  <!-- Table of contents -->
-  <table class="toc">
-    <tr>
-      <th colspan="2">Table of Contents</th>
-    </tr>
-
-    <tr>
-      <td>01</td>
-      <td><a href="#Abstract">Abstract</a></td>
-    </tr>
-
-    <tr>
-      <td>02</td>
-      <td><a href="#Introduction">Introduction</a></td>
-    </tr>
-
-    <tr>
-      <td>03</td>
-      <td><a href="#Analysis">Analysis and Discussion</a></td>
-    </tr>
-
-    <tr>
-      <td>04</td>
-      <td><a href="#References">References</a></td>
-    </tr>
-  </table>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <style>
+<style>
+  .mySlides {display:none;}
+</style>
 
   
-<hr>
-
-<h2>JavaScript Practice Tasks</h2>
-
-<!-- Consolidation Task 1: User input and alert -->
-<h3>Task 1: Display Your Message</h3>
-
-<label for="userMessage">Enter some text:</label>
-<input type="text" id="userMessage" placeholder="Type your message here">
-
-<button id="messageButton">Display Message</button>
-
-<!-- Consolidation Task 2: Generate a random number -->
-<h3>Task 2: Random Number Generator</h3>
-
-<p id="randomNumber">Your random number will appear here.</p>
-
-<button id="numberButton">Generate Random Number</button>
-
-<script>
-  // Task 1: Get the input and button elements
-  var messageInput = document.getElementById("userMessage");
-  var messageButton = document.getElementById("messageButton");
-
-  // Display the entered text in an alert box when clicked
-  messageButton.addEventListener("click", function() {
-    alert(messageInput.value);
-  });
-
-  // Task 2: Get the paragraph and random number button
-  var numberParagraph = document.getElementById("randomNumber");
-  var numberButton = document.getElementById("numberButton");
-
-  // Generate and display a random integer between 1 and 10
-  numberButton.addEventListener("click", function() {
-    var randomNumber = Math.floor(Math.random() * 10) + 1;
-    numberParagraph.textContent = "Your random number is: " + randomNumber;
-  });
-</script>
-</body>
-</html>
